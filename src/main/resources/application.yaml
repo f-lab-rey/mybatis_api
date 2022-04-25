@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://54.180.116.159:3306/DB_DAKRINK
+    username: dakrink
+    password: info9831104!
+    hikari:
+      connection-timeout: 20000
+      minimum-idle: 5
+      maximum-pool-size: 12
+      idle-timeout: 300000
+      max-lifetime: 1200000
+  mvc:
+    throw-exception-if-no-handler-found: true
+mybatis:
+  mapper-locations: classpath:com/example/project1/**/*.xml
